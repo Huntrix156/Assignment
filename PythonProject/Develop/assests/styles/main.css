@@ -1,0 +1,31 @@
+body{
+    background-image:url("https://cdn.pixabay.com/photo/2026/01/17/08/49/curved-road-10072702_960_720.jpg");
+    background-position:center;
+    background-size:cover;
+}
+nav ul{
+    margin:30px;
+    text-align:right;
+
+}
+nav ul ,a{
+    display:flex;
+    padding:50px;
+    text-decoration:none;
+    list-style-type:none;
+
+
+}
+#first{
+    color:red;
+    text-align:center;
+
+}
+.get{
+    background-color:red;
+    border-radius:10px;
+    padding:5px;
+}
+p{
+    text-align:center;
+}
