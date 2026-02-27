@@ -2,10 +2,13 @@ body{
     background-image:url("https://cdn.pixabay.com/photo/2026/01/17/08/49/curved-road-10072702_960_720.jpg");
     background-position:center;
     background-size:cover;
+
 }
 nav ul{
     margin:30px;
     text-align:right;
+    display:flex;
+    justify-content:right;
 
 }
 nav ul ,a{
@@ -28,4 +31,31 @@ nav ul ,a{
 }
 p{
     text-align:center;
+}
+p mark{
+    background-color:transparent;
+    color:red;
+
+}
+p{
+    color:white;
+}
+.icons{
+    color:white;
+    font-size:20px;
+    position:relative;
+    top:50%;
+    left:45%;
+    align-items:center;
+    height:30px;
+    padding:20px;
+}
+select{
+    border:none;
+    background-color:transparent;
+}
+h1{
+    position:relative;
+    /*corner-top-right:50%*/
+    transform:translateY(-50%,-50%);
 }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strive</title>
+
+    <style>
+        body{
+            margin: 0;
+            background-image: url("beard-2326422_1280.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+        }
+
+        /* NAVBAR */
+        .nav-bar{
+            width: 100%;
+            padding: 15px 30px;
+        }
+
+        .nav-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-menu{
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .nav-link{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        .nav-link:hover{
+            background-color: orange;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .logo{
+            font-size: 22px;
+            font-weight:bold;
+            color: white;
+        }
+
+        .get-started {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .get-started:hover{
+            opacity: 0.9;
+        }
+
+        /* HERO SECTION */
+        .hero-image{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-text h1{
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h2{
+            font-size: 18px;
+            font-weight: normal;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav-bar">
+    <div class="nav-container">
+        <div class="logo">Strive.</div>
+
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="dropdown.html" class="nav-link">Dropdown</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="get-started">Get Started</button>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero-image">
+    <div class="hero-text">
+        <h1>Building Trust, Driving Growth</h1>
+        <h2>
+            Present your business with confidence using a clean, flexible,
+            and fully responsive template that helps you connect with clients,
+            attract opportunities, and strengthen your brand identity.
+        </h2>
+
+        <!-- Centered Button -->
+        <button class="get-started">Get Started</button>
+    </div>
+</section>
+
+</body>
+</html>
