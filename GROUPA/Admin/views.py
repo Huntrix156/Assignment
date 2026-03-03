@@ -1,5 +1,5 @@
 from django.contrib import messages
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate,logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 
@@ -70,4 +70,18 @@ def sign_up(request):
         return redirect('index')
     return render(request, 'sign_up.html')
 def log_in(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(request, username=username,
+                            password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('index')
+        else:
+            messages.error(request, 'Invalid Username or Password')
+            return redirect('log_in')
     return render(request, 'log_in.html')
+def logout_view(request):
+    logout(request)
+    return redirect('log_in')
